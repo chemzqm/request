@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>request tests</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="mocha/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="mocha/mocha.js"></script>
+    <script src="../build/build.js"></script>
+    <script>
+      mocha.setup('tdd');
+    </script>
+    <script src="/test/test.request.js"></script>
+    <script id="run">
+      if (window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      } else {
+        mocha.run();
+      }
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+{
+  "name": "request",
+  "description": "lighweight ajax request with fluent API",
+  "version": "0.0.1",
+  "keywords": ["request", "ajax"],
+  "dependencies": {
+    "component/emitter": "*",
+    "component/reduce": "*"
+  },
+  "development": {
+    "dependencies": {
+      "component/assert": "*"
+    }
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "repository": "chemzqm/request"
+}
