@@ -786,7 +786,7 @@ Request.prototype.callback = function(err, res){
       err = new Error('cannot GET /error (' + res.status + ')');
     }
   }
-  if (2 == fn.length) return fn(err, res);
+  if (2 == fn.length || 0 === fn.length) return fn(err, res);
   res.error = err;
   if (err) this.emit('error', err);
   fn(res);
