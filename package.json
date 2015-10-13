@@ -1,0 +1,37 @@
+{
+  "name": "request-component",
+  "version": "0.0.1",
+  "description": "superagent client only version.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemzqm/request.git"
+  },
+  "keywords": [
+    "request"
+  ],
+  "author": "chemzqm@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chemzqm/request/issues"
+  },
+  "homepage": "https://github.com/chemzqm/request#readme",
+  "browser": {
+    "emitter": "component-emitter",
+    "reduce": "reduce-component"
+  },
+  "dependencies": {
+    "component-emitter": "^1.2.0",
+    "reduce-component": "^1.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "mocha-loader": "^0.7.1"
+  }
+}

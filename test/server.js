@@ -135,5 +135,5 @@ app.get('/xdomain', function(req, res){
 app.use(express.static(__dirname + '/../'));
 
 var server = app.listen(3000, function() {
-  //console.log('Test server listening on port %d', server.address().port);
+  console.log('Test server listening on port %d', server.address().port);
 });
