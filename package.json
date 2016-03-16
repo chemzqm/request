@@ -1,6 +1,6 @@
 {
   "name": "request-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "superagent client only version.",
   "main": "index.js",
   "directories": {
