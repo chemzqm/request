@@ -787,6 +787,7 @@ Request.prototype.callback = function(err, res){
     }
   }
   if (2 == fn.length || 0 === fn.length) return fn(err, res);
+  res = res || {}
   res.error = err;
   if (err) this.emit('error', err);
   fn(res);
