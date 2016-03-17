@@ -449,6 +449,7 @@ function Request(method, url) {
   this.url = url;
   this.header = {};
   this._header = {};
+  this.set('X-Requested-With', 'XMLHttpRequest')
   this.on('end', function(){
     var res = new Response(self);
     if ('HEAD' == method) res.text = null;
