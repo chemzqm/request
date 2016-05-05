@@ -354,6 +354,7 @@ Response.prototype.setHeaderProperties = function(header){
 
 Response.prototype.parseBody = function(str){
   var parse = request.parse[this.type];
+  if (!str) return null
   return parse
     ? parse(str)
     : null;
